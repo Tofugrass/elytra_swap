@@ -52,9 +52,13 @@ public class ConfigHandler {
 					"Default: ENABLE\n")
 	public EnableDisableEnum useFireworks = EnableDisableEnum.ENABLE;
 
-	@Comment(value = "\nBy setting this to DISABLE, you can completely disable swapping.\n" +
+	@Comment(value = "\nBy setting this to DISABLE, you can completely disable firework usage.\n" +
 			"Default: ENABLE\n")
 	public EnableDisableEnum globalSwapEnable = EnableDisableEnum.ENABLE;
+	
+	@Comment(value = "\nWhen this is set to ENABLE, You takeoff vertically.\n" +
+			"Default: ENABLE\n")
+	public EnableDisableEnum verticalMode = EnableDisableEnum.ENABLE;
 
 	@Comment(value = "\nIf this potion is set to true, than every time client, without Elytra Swap mod installed, joins the server will receive short note informing about this mod.\n")
 	public boolean sendInfoOnClientJoin = true;
